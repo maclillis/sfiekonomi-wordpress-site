@@ -1,0 +1,112 @@
+
+#sfi-footer-wrapper {
+    width: 100%;
+    height: auto;
+    background-color: $fi-black;
+    color: $fi-white;
+    display: flex;
+    justify-content: center;
+
+    @media print {
+        display: none;
+    }
+
+    #sfi-inner-footer-wrapper {
+        width: $fullWidth;
+        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 0;
+
+        @media (max-width: 576px) {
+            width: 90%;
+            flex-direction: column;
+          }
+
+          @media (max-width: 1260px) {
+            width: 90%;
+          }
+
+        #sfi-quick-links {
+
+            p:first-child {
+                padding: 8px 0;
+
+                @media (max-width: 576px) {
+                    padding: 30px 0;
+                    text-align: center;
+                    font-size: 18px;
+                  }
+            }
+
+            ul {
+                text-transform: uppercase;
+                margin-bottom: 20px;
+
+                @media (max-width: 576px) {
+                    text-align: center;
+                  }
+
+                li {
+                    padding: 8px 0;
+                    font-family: $gothamBook, Arial, sans-serif; 
+
+                    @media (max-width: 576px) {
+                        font-size: 18px;
+                        padding: 30px;
+                        border-bottom: 1px solid $sfi-darkgrey;
+                      }
+    
+                }
+            }
+
+            p {
+                font-family: $gothamBold, Arial, sans-serif;
+
+                @media (max-width: 576px) {
+                    text-align: center;
+                  }
+            }
+        }
+    
+        #sfi-footer-information {
+            text-transform: uppercase;
+            text-align: right;
+
+            @media (max-width: 576px) {
+                text-align: center;
+              }
+        }
+
+        #sfi-footer-text {
+            margin-top: 30px;
+
+            a {
+                padding-top: 5px;
+                font-family: $gothamBold, Arial, sans-serif;
+            }
+
+            #sfi-date-info {
+                text-transform: none;
+                padding-top: 50px;
+                line-height: 16px;
+                font-size: 12px;
+            }
+        }
+
+        .fi-footer-logo {
+            width: 40%;
+
+            @media (max-width: 576px) {
+                margin-top: 30px;
+                width: 30%;
+              }
+        }
+
+        a {
+            color: $fi-white;
+            font-family: $gothamBook, Arial, sans-serif;
+        }
+    }
+}
